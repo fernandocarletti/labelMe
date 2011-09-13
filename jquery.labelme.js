@@ -1,3 +1,15 @@
+/**
+ * labelMe jQuery extension
+ * 
+ * @version: 1.0, 13.09.2011
+ * 
+ * @author: Fernando Carletti
+ *          contato@fernandocarletti.net
+ *          http://fernandocarletti.net
+ * 
+ * @example: $('selector').labelMe();
+ * 
+ */
 (function($) {
 	$.fn.labelMe = function(settings) {
 		
