@@ -25,17 +25,13 @@ There are some configuratioin options:
 Using default configuration:
 
 <code>
-
 $('.label').labelMe();
-
 </code>
 
 Using custom configuration:
 
 <code>
-
 $('.label').labelMe({ 'labelAttr': 'rel', 'labelBefore': true });
-
 </code>
 
 Custom blur class:
@@ -43,18 +39,14 @@ Custom blur class:
 In css file:
 
 <code>
-
 .custom_blur {
 	font-weight: bold;
 	color:red;
 }
-
 </code>
 
 In js file:
 
 <code>
-
 $('.label').labelMe({ 'blurClass': 'custom_blur' });
-
 </code>
