@@ -59,7 +59,11 @@
 						var label = '<label for="' + e.attr('id') + '" class="' + s.labelClass + '">' + e.attr(s.labelAttr) + '</label>';
 
 						if(s.addLineBreak) {
-							label = label + '<br />';
+							if(s.labelBefore) {
+								e.after('<br />');
+							} else {
+								label = label + '<br />';
+							}
 						}
 
 						if(s.labelBefore) {
@@ -86,10 +90,8 @@
 			e.blur();
 
 			if(s.addLineBreak) {
-				var ln = '<br />';
-
 				if(!(e.attr('type') in { 'radio':1, 'checkbox':1 })) {
-					e.after(ln);
+					e.after('<br />');
 				}
 			}
 		});

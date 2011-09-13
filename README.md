@@ -1,4 +1,4 @@
-## What is this?
+# What is this?
 
 labelMe is a jQuery extension to place field labels inside the elements (except checkbox and radio buttons, that can be placed after or before the element).
 
@@ -23,11 +23,38 @@ There are some configuratioin options:
 ## Usage
 
 Using default configuration:
+
 <code>
+
 $('.label').labelMe();
+
 </code>
 
 Using custom configuration:
+
 <code>
+
 $('.label').labelMe({ 'labelAttr': 'rel', 'labelBefore': true });
+
+</code>
+
+Custom blur class:
+
+In css file:
+
+<code>
+
+.custom_blur {
+	font-weight: bold;
+	color:red;
+}
+
+</code>
+
+In js file:
+
+<code>
+
+$('.label').labelMe({ 'blurClass': 'custom_blur' });
+
 </code>
