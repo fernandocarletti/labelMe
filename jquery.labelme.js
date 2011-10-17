@@ -102,7 +102,7 @@
 			e.blur();
 
 			if(s.addLineBreak) {
-				if(!(e.attr('type') in { 'radio':1, 'checkbox':1 })) {
+				if(!(e.attr('type') in { 'radio':1, 'checkbox':1, 'hidden':1 })) {
 					e.after('<br />');
 				}
 			}
